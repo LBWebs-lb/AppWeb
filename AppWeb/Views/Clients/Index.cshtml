@@ -119,6 +119,11 @@
                     <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
                     <a asp-action="Details" asp-route-id="@item.ID">Detalls</a> |
                     <a asp-action="Delete" asp-route-id="@item.ID">Eliminar</a>
+                    @if (item.climent)
+                    {
+                        <span>| </span>
+                        <a asp-action="Details" asp-route-id="@item.ID">Manteniment</a>
+                    }
                 </td>
             </tr>
         }
