@@ -1,0 +1,114 @@
+﻿@model AppWeb.Models.Clients
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Clients</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dnom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dnom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.maildnom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.maildnom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.userwd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.userwd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.passwd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.passwd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.accewd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.accewd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.userht)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.userht)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.passht)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.passht)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.lnkht)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.lnkht)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dobs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dobs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.est)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.est)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dobsest)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dobsest)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.presu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.presu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ppresu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ppresu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fpag)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fpag)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.phtheme)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.phtheme)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.climent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.climent)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Editar</a> |
+    <a asp-action="Index">Endarrere</a>
+</div>

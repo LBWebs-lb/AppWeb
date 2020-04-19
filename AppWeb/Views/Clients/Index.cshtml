@@ -1,0 +1,126 @@
+﻿@model IEnumerable<AppWeb.Models.Clients>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Crear nou</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.dnom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.maildnom)
+            </th>
+            @*  <th>
+                    @Html.DisplayNameFor(model => model.userwd)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.passwd)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.accewd)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.userht)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.passht)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.lnkht)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dobs)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.est)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dobsest)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.presu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ppresu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.fpag)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.phtheme)
+                </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.climent)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dnom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.maildnom)
+                </td>
+                @* <td>
+                        @Html.DisplayFor(modelItem => item.userwd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.passwd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.accewd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.userht)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.passht)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.lnkht)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dobs)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.est)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dobsest)
+                </td>
+                @* <td>
+                        @Html.DisplayFor(modelItem => item.presu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ppresu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.fpag)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.phtheme)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.climent)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Detalls</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
